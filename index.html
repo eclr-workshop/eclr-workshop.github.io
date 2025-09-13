@@ -232,42 +232,89 @@
   </div>
 
   <div style="text-align:center;">
-    <table style="width: 60%; margin: 0 auto; border-collapse: collapse;">
-      <tr style="border-bottom: 1px solid #ddd;">
-        <th style="padding: 12px; text-align: center; font-size: 18px;">Time</th>
-        <th style="padding: 12px; text-align: center; font-size: 18px;">Event</th>
+    <table class="schedule-table">
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">14:00-14:10</td>
-        <td style="padding: 12px; text-align: center;">Opening Remarks</td>
+      <tr class="event-opening">
+        <td class="time-cell">14:00-14:10</td>
+        <td>
+          <div class="event-title">Opening Remarks</div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">14:10-14:40</td>
-        <td style="padding: 12px; text-align: center;">Invited Talk 1</td>
+      <tr class="event-invited">
+        <td class="time-cell">14:10-14:40</td>
+        <td>
+          <div class="event-title">Invited Talk 1: Given by Dr. Rogerio Schmidt Feris (MIT-IBM Watson AI Lab)</div>
+          <!-- <div class="subtext">
+            <div class="paper-title">Rogerio Schmidt Feris (MIT-IBM Watson AI Lab)</div>
+          </div> -->
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">14:40-15:10</td>
-        <td style="padding: 12px; text-align: center;">Invited Talk 2</td>
+      <tr class="event-invited">
+        <td class="time-cell">14:40-15:10</td>
+        <td>
+          <div class="event-title">Invited Talk 2 <span style="font-size: 0.8em; color: #888;">(To be updated)</span></div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">15:10-15:40</td>
-        <td style="padding: 12px; text-align: center;">Coffee Break</td>
+      <tr class="event-break">
+        <td class="time-cell">15:10-15:40</td>
+        <td>
+          <div class="event-title">Coffee Break</div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">15:40-15:55</td>
-        <td style="padding: 12px; text-align: center;">Best Paper Presentation</td>
+      <tr class="event-best-paper">
+        <td class="time-cell">15:40-15:55</td>
+        <td>
+          <div class="event-title">Best Paper Presentation</div>
+          <div class="subtext">
+            <div class="paper-title">Fine-tuning Large Models for Image Segmentation under Limited Resources: The SAM2-UNet Experience</div>
+            <div class="author-info">Kuo Wang (Sun Yat-sen University)</div>
+          </div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">15:55-16:25</td>
-        <td style="padding: 12px; text-align: center;">Oral Session (3 papers)</td>
+      <tr class="event-oral">
+        <td class="time-cell">15:55-16:05</td>
+        <td>
+          <div class="event-title">Oral Presentation 1</div>
+          <div class="subtext">
+            <div class="paper-title">SPoT: Subpixel Placement of Tokens in Vision Transformers</div>
+            <div class="author-info">Martine Hjelkrem-Tan (University of Oslo)</div>
+          </div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">16:25-17:00</td>
-        <td style="padding: 12px; text-align: center;">Poster Session</td>
+      <tr class="event-oral">
+        <td class="time-cell">16:05-16:15</td>
+        <td>
+          <div class="event-title">Oral Presentation 2</div>
+          <div class="subtext">
+            <div class="paper-title">Efficient Depth- and Spatially-Varying Image Simulation for Defocus Deblur</div>
+            <div class="author-info">Xinge Yang (KAUST)</div>
+          </div>
+        </td>
       </tr>
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 12px; text-align: center;">17:00-17:10</td>
-        <td style="padding: 12px; text-align: center;">Closing Remark</td>
+      <tr class="event-oral">
+        <td class="time-cell">16:15-16:25</td>
+        <td>
+          <div class="event-title">Oral Presentation 3</div>
+          <div class="subtext">
+            <div class="paper-title">Tiny-vGamba: Distilling Large Vision-(Language) Knowledge from CLIP into a Lightweight vGamba Network</div>
+            <div class="author-info">Ismail Abdulrashid (The University of Tulsa)</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="event-poster">
+        <td class="time-cell">16:25-17:00</td>
+        <td>
+          <div class="event-title">Poster Session</div>
+        </td>
+      </tr>
+      <tr class="event-closing">
+        <td class="time-cell">17:00-17:10</td>
+        <td>
+          <div class="event-title">Closing Remark</div>
+        </td>
       </tr>
     </table>
   </div>
