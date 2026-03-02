@@ -29,14 +29,49 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
- <style type="text/css">
-  .left,
-  .right {
-    float: left;
-    width: 50%;
-    padding-left: 0px;
-  }
-  .left { padding-left: 20px; }
+<style type="text/css">
+ .left,
+ .right {
+   float: left;
+   width: 50%;
+   padding-left: 0px;
+ }
+ .left { padding-left: 20px; }
+
+ /* Speakers layout: 3 per row on desktop, same size as Organizer cards */
+ .speakers-deck {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 75%;
+   margin: 0 auto;
+ }
+
+ .speakers-deck .card {
+   flex: 1 1 30%;
+   max-width: 30%;
+   margin: 10px;
+ }
+
+ @media (max-width: 768px) {
+   .speakers-deck {
+     width: 100%;
+   }
+   .speakers-deck .card {
+     flex: 1 1 45%;
+     max-width: 45%;
+   }
+ }
+
+ @media (max-width: 576px) {
+   .speakers-deck {
+     width: 100%;
+   }
+   .speakers-deck .card {
+     flex: 1 1 100%;
+     max-width: 100%;
+   }
+ }
 </style> 
   </head>
   
@@ -215,63 +250,10 @@
       <div class="col-12"> 
         <!-- Section title -->
         <div class="section-title">
-          <h2 id="speakers">Speakers (to be updated)</h2>
+          <h2 id="speakers">Speakers</h2>
         </div>
-        <div class="card-deck"> 
-          <!-- Speakers list -->
-          <!-- <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="150px">
-                    <td><img src="./res/portrait/torsten_hoefler.png" alt="" class="rounded-circle" width="80%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://htor.inf.ethz.ch/">Torsten Hoefler</a></h5></td>
-                  </tr>
-                  <tr height="105px">
-                    <td><p><br>ETH Zurich</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="150px">
-                    <td><img src="./res/portrait/abhinav_shrivastava.png" alt="" class="rounded-circle" width="80%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://www.cs.umd.edu/people/abhinav">Abhinav Shrivastava</a></h5></td>
-                  </tr>
-                  <tr height="105px">
-                    <td><p>University of Maryland, College Park<br></p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="150px">
-                    <td><img src="./res/portrait/piotr_koniusz.jpeg" alt="" class="rounded-circle" width="80%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://users.cecs.anu.edu.au/~koniusz/">Piotr Koniusz</a></h5></td>
-                  </tr>
-                  <tr height="105px">
-                    <td><p>Data61/CSIRO</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div> -->
+        <div class="card-deck speakers-deck"> 
+      
 
           <div class="card">
             <div class="category-block">
@@ -341,23 +323,6 @@
             </div>
           </div>
 
-          <!-- <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="150px">
-                    <td><img src="./res/portrait/ruihao_gong.jpg" alt="" class="rounded-circle" width="80%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td><h5 class="text-center"><a href="https://xhplus.github.io/">Ruihao Gong</a></h5></td>
-                  </tr>
-                  <tr height="105px">
-                    <td><p><br>SenseTime Research</p></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div> -->
 
           <div class="card">
             <div class="category-block">
@@ -381,52 +346,21 @@
             </div>
           </div>
 
-          
-        </div>
-
-        <!-- <br>
-
-        <div class="card-deck">
-          
-        <div class="card">
-          <div class="category-block">
-            <table width="80%" border="0" align="center">
-              <tbody align="center">
-                <tr height="150px">
-                  <td><img src="./res/portrait/yanzhi_wang.jpg" alt="" class="rounded-circle" width="80%"></td>
-                </tr>
-                <tr height="30px">
-                  <td>
-                    <h5 class="text-center"><a href="https://coe.northeastern.edu/people/wang-yanzhi/">Yanzhi Wang</a></h5>
-                  </td>
-                </tr>
-                <tr height="105px">
-                  <td>
-                    <p><br>Northeastern University</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-          
-
           <div class="card">
             <div class="category-block">
               <table width="80%" border="0" align="center">
                 <tbody align="center">
                   <tr height="150px">
-                    <td><img src="./res/portrait/bohan_zhuang.jpg" alt="" class="rounded-circle" width="80%"></td>
+                    <td><img src="./res/portrait/aishan_liu.jpg" alt="" class="rounded-circle" width="80%"></td>
                   </tr>
                   <tr height="30px">
                     <td>
-                      <h5 class="text-center"><a href="https://bohanzhuang.github.io/">Bohan Zhuang</a></h5>
+                      <h5 class="text-center"><a href="https://liuaishan.github.io/">Aishan Liu</a></h5>
                     </td>
                   </tr>
                   <tr height="105px">
                     <td>
-                      <p><br>Monash University</p>
+                      <p>Beihang University<br></p>
                     </td>
                   </tr>
                 </tbody>
@@ -434,39 +368,10 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="category-block">
-              <table width="80%" border="0" align="center">
-                <tbody align="center">
-                  <tr height="150px">
-                    <td><img src="./res/portrait/rogerio_schmidt_feris.png" alt="" class="rounded-circle" width="80%"></td>
-                  </tr>
-                  <tr height="30px">
-                    <td>
-                      <h5 class="text-center"><a href="https://www.rogerioferis.org/">Rogerio Feris</a></h5>
-                    </td>
-                  </tr>
-                  <tr height="105px">
-                    <td>
-                      <p><br>MIT-IBM Watson AI lab</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          
+        </div>
 
-        </div> -->
         
-      <br> <br>
-        <div class="section-title">
-          <h2 id="dates">Schedule</h2>
-        </div>
-
-        <div  style="text-align:center;">
-            TBD
-            <!-- <img src="./res/speakers timeline.png" width="50%"> -->
-        </div>
         </div>
       </div>
     </div>
